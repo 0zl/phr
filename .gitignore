@@ -130,3 +130,4 @@ dist
 .pnp.*
 
 *.deb
+*.test_result.*
