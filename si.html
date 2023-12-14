@@ -1,0 +1,6 @@
+<!DOCTYPE html><html lang="en"><meta charset="UTF-8"><meta content="width=device-width,initial-scale=1"name="viewport"><title>Shiro Interactive</title><style>*{box-sizing:border-box}body{position:relative;margin:0;width:100%;height:100%}p{margin:0}.a{position:relative;width:200px;height:200px}.b{-webkit-text-size-adjust:none;text-size-adjust:none;font-size:4px}</style><div class="a"><p class="b"></p></div><script async>(async () => {
+    'use strict'
+    const siu = 'https://gist.githubusercontent.com/0zl/76758bf7c06bc8e61c5864017c1b961f/raw/1d764e8ea34283e345b42ee300071a110397cfc6/si.txt'
+    const sit = await (await fetch(siu)).text()
+    document.querySelector('.b').textContent = sit
+})()</script>
