@@ -59,4 +59,4 @@ class PuppeteerWrapper {
     }
 }
 
-export { PuppeteerWrapper }
+export { PuppeteerWrapper, ISnapOptions }
