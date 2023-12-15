@@ -1,4 +1,4 @@
-import { Browser } from 'puppeteer'
+import { Browser, executablePath } from 'puppeteer'
 import puppeteer from 'puppeteer-extra'
 import puppeteerStealth from 'puppeteer-extra-plugin-stealth'
 
@@ -27,7 +27,8 @@ class PuppeteerWrapper {
                 '--disable-setuid-sandbox',
                 '--disable-dev-shm-usage'
             ],
-            ignoreHTTPSErrors: true
+            ignoreHTTPSErrors: true,
+            executablePath: executablePath()
         })
 
         console.log('ppt initialized.')
