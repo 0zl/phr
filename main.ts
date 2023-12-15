@@ -17,6 +17,6 @@ if ( import.meta.main ) {
         console.log(`${signal} handled.`)
     }
 
-    await ppt.init(true)
+    await ppt.init('new')
     await svr.init(7680)
 }
